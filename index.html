@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Not This Time</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">midnightokyo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="mountain.jpg" id="mountain">
+        <h2 id="text">Reckless</h2>
+        <a href="#" id="btn">Explore</a>
+    </section>
+    <div class="sec">
+        <h2>Paradox Time</h2>
+        <p>We are stuck in a paradox called life, and our life is stuck in the cycle of time. Time is a universal set
+            consisting of every possibility, true or false. Now interestingly, time is always true but not a paradox. So
+            if your life is false, but you are living, then it is because mathematically you should. </p>
+    </div>
+    <script>
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            text.style.marginRight = value * 2 + 'px';
+            header.style.marginTop = value * 0.5 + 'px'
+        })
+    </script>
+</body>
+
+</html>
